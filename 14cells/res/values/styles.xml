@@ -1,0 +1,103 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="@android:style/Theme.NoTitleBar"></style>
+
+    <style name="title_text">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="listview">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:cacheColorHint">@color/transparent</item>
+        <item name="android:headerDividersEnabled">@color/transparent</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:divider">@color/bgc_line</item>
+        <item name="android:dividerHeight">0.5dp</item>
+        <item name="android:transcriptMode">alwaysScroll</item>
+    </style>
+
+    <style name="mine_info">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+    </style>
+
+    <style name="mine_info_text0" parent="@style/mine_info">
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="mine_info_text">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_item_button">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="searchDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/search_bg</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="progressDialog" parent="@style/searchDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <style name="custom_dialog" parent="@style/searchDialog">
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+    <style name="popupWindow">
+        <item name="android:windowEnterAnimation">@anim/up_translate</item>
+        <item name="android:windowExitAnimation">@anim/down_translate</item>
+    </style>
+
+    <style name="top_bar_left">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@drawable/font_color_style</item>
+        <item name="android:background">@drawable/news_topbar_group</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="top_bar_right" parent="@style/top_bar_left">
+        <item name="android:background">@drawable/news_topbar_all</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+    </style>
+
+</resources>

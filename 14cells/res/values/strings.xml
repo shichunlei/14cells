@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">细胞</string>
+    
+    <string name="album">相册</string>
+    <string name="photograph">拍照</string>
+    <string name="share_photo">分享照片</string>
+    
+    <string name="live">直播</string>
+    <string name="discovery">发现</string>
+    <string name="mine">我的</string>
+    <string name="news">消息</string>
+    
+    <string name="events">活动</string>
+    <string name="clubs">社团</string>
+    <string name="picture">照片</string>
+    <string name="details">详情</string>
+    <string name="member">成员</string>
+    <string name="location">位置</string>
+    <string name="share">分享</string>
+    <string name="create">创建</string>
+    <string name="chose_event">选择活动</string>
+    <string name="name_this_location">为此位置命名</string>
+    <string name="add_picture_description">添加图片描述...</string>
+    
+    <string name="determine">确定</string>
+    <string name="complete">完成</string>
+    <string name="exit">退出</string>
+    <string name="cancel">取消</string>
+    <string name="next">下一步</string>
+    <!-- 个人资料 -->
+    <string name="setting">个人设置</string>
+    <string name="handover">切换账号</string>
+    <string name="personal_info">个人信息</string>
+    <string name="modify_personal_information">修改个人信息</string>
+    <string name="edit">编辑</string>
+    <string name="search">搜索</string>
+    <string name="no_search_results">无搜索结果</string>
+    <string name="email">邮箱</string>
+    <string name="name_">姓名</string>
+    <string name="sex">性别</string>
+    <string name="sex1">男</string>
+    <string name="sex2">女</string>
+    <string name="school_">学校</string>
+    <string name="schoolNo">学号</string>
+    <string name="college">学院</string>
+    <string name="enrollment_time">入学年份</string>
+    <string name="consent">同意</string>
+    <string name="refuse">拒绝</string>
+    <!-- 发起活动 -->
+    <string name="post_event">发起活动</string>
+    <string name="select_eventtype_text">请选择创建的\n活动类型</string>
+    <string name="conference">会议</string>
+    <string name="party">聚餐</string>
+    <string name="sports">体育</string>
+    <string name="travel">旅行</string>
+    <string name="event_name">活动名称</string>
+    <string name="start_time">开始时间</string>
+    <string name="end_time">结束时间</string>
+    <string name="number_of_eople">人数</string>
+    <string name="limit_the_number_of_people">人数限制</string>
+    <string name="digit">(位)</string>
+    <string name="charge">收费</string>
+    <string name="whether_the_charges">是否收费</string>
+    <string name="money">(元)</string>
+    <string name="event_address">活动地点</string>
+    <string name="event_limit">限制人数</string>
+    <string name="event_charge">活动费用</string>
+    <string name="event_dec">活动简介</string>
+    <string name="input_event_dec">请在此输入活动简介</string>
+    <!-- 登录注册 -->
+    <string name="login">登\t录</string>
+    <string name="regist">注\t册</string>
+    <string name="hint_info_one">完善头像信息有效提高辨识度</string>
+    <string name="hint_title">请输入新的昵称</string>
+    <string name="hint_info1">请输入真实姓名</string>
+    <string name="hint_info2">姓名不真实将无法通过验证</string>
+    <string name="hint_info_school">请输入学校名称</string>
+    <string name="hint_info_college">请输入学院名称</string>
+    <string name="hint_info_schoolnum">请输入学号</string>
+    <string name="hint_info_schooltime">请选择入学时间</string>
+    <string name="hint_info_email">请输入注册邮箱</string>
+    <string name="hint_info_password">请输入密码</string>
+    <string name="wanshan">去完善资料</string>
+    <string name="skip">先看看再说</string>
+    <!-- 刷新 -->
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">松开后刷新数据</string>
+    <string name="pull_to_refresh_refreshing_label">正在刷新...</string>
+    <string name="pull_to_refresh_footer_release_label">松开载入更多</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">正在加载...</string>
+    <!-- 修改密码 -->
+    <string name="change_password">修改密码</string>
+    <string name="old_password">旧密码：</string>
+    <string name="new_password">新密码：</string>
+    <string name="new_password_to">确认：</string>
+    <string name="old_password_hint">请输入旧密码</string>
+    <string name="new_password_hint">请输入新密码</string>
+    <string name="new_password_to_hint">确认新密码</string>
+    <string name="comments_success">评论成功！</string>
+    <string name="comments_fail">评论失败，请稍候再试！</string>
+    <string name="islike">点赞成功！</string>
+    <string name="dislike">取消赞</string>
+    <string name="loading">请稍候...</string>
+    <string name="network_access_failure">网络访问失败，请稍后再试！</string>
+    <string name="notification">通知</string>
+    <string name="no_notice">暂无通知</string>
+    <string name="respond">回应</string>
+    <string name="no_respond">暂无回应</string>
+
+    <!-- 分享 -->
+    <string name="sina">新浪微博</string>
+    <string name="tencent">腾讯微博</string>
+    <string name="renren">人人网</string>
+    <string name="douban">豆瓣网</string>
+    <string name="mail">邮件</string>
+    <string name="sms">短信</string>
+    <!-- 我的 -->
+    <string name="initiator">发起者</string>
+    <string name="next_event">下次活动：</string>
+    <string name="join_club">申请入团</string>
+    <string name="audit">正在审核</string>
+    <string name="exit_club">退出社团</string>
+    <string name="join_event">加入活动</string>
+    <string name="line_up">排队中</string>
+    <string name="exit_event">退出活动</string>
+    <string name="dissolve_event">解散活动</string>
+    <string name="event_details">活动详情</string>
+    <string name="club_details">社团详情</string>
+    <string name="no_event">暂无活动</string>
+    <string name="no_club">暂无社团</string>
+    <string name="no_picture">暂无照片</string>
+    <!-- 扫码、签到 -->
+    <string name="registration">签到</string>
+    <string name="saoma">将取景框对准二维码,\n即可自动扫描.</string>
+    <string name="yet_to_come">未到</string>
+    <!-- 创建社团部分 -->
+    <string name="create_club">创建社团</string>
+    <string name="prompt">温馨提示</string>
+    <string name="create_a_club_to_give_up">确定要放弃创建社团吗？</string>
+    <string name="add_club_logo">请先添加社团LOGO！</string>
+    <string name="club_name_cannot_be_empty">社团名称不能为空！</string>
+    <string name="club_introduction_cannot_be_empty">社团简介不能为空！</string>
+    <string name="creating_successful">创建成功！</string>
+    <string name="failed_to_create">创建失败，请稍候再试！</string>
+
+</resources>

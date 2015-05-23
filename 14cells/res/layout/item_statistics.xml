@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <com.fourteencells.StudentAssociation.customview.MyCircleImageView
+        android:id="@+id/image_statistic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/default_image" />
+
+    <TextView
+        android:id="@+id/tv_statistic_name"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_statistic"
+        android:gravity="center"
+        android:padding="4dp"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/white" />
+
+    <com.fourteencells.StudentAssociation.customview.MyCircleImageView
+        android:id="@+id/v_statistic_mask"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/header_shank"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_statistic_yet_to_come"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/yet_to_come"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+</RelativeLayout>

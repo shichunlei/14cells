@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_img"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include"
+        android:layout_alignParentTop="true"
+        layout="@layout/title_bar" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/include"
+        android:background="@color/mask" />
+
+    <com.fourteencells.StudentAssociation.customview.MyCircleImageView
+        android:id="@+id/img_headpic"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/include"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/default_image" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/img_headpic"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/bgc_line" />
+
+            <LinearLayout
+                style="@style/mine_info"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/mine_info_text0"
+                    android:text="@string/name_" />
+
+                <TextView
+                    android:id="@+id/personal_info_name"
+                    style="@style/mine_info_text"
+                    android:text="" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/bgc_line" />
+
+            <LinearLayout
+                style="@style/mine_info"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/mine_info_text0"
+                    android:text="@string/sex" />
+
+                <TextView
+                    android:id="@+id/personal_info_sex"
+                    style="@style/mine_info_text"
+                    android:text="" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/bgc_line" />
+
+            <LinearLayout
+                style="@style/mine_info"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/mine_info_text0"
+                    android:text="@string/school_" />
+
+                <TextView
+                    android:id="@+id/personal_info_school"
+                    style="@style/mine_info_text"
+                    android:text="" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/bgc_line" />
+
+            <LinearLayout
+                style="@style/mine_info"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/mine_info_text0"
+                    android:text="@string/college" />
+
+                <TextView
+                    android:id="@+id/personal_info_college"
+                    style="@style/mine_info_text"
+                    android:text="" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/bgc_line" />
+
+            <LinearLayout
+                style="@style/mine_info"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/mine_info_text0"
+                    android:text="@string/schoolNo" />
+
+                <TextView
+                    android:id="@+id/personal_info_schoolNo"
+                    style="@style/mine_info_text"
+                    android:text="" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/bgc_line" />
+
+            <LinearLayout
+                style="@style/mine_info"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/mine_info_text0"
+                    android:text="@string/enrollment_time" />
+
+                <TextView
+                    android:id="@+id/personal_info_time"
+                    style="@style/mine_info_text"
+                    android:text="" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/bgc_line" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

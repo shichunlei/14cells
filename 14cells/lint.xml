@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="DrawAllocation">
+        <ignore path="src/com/fourteencells/StudentAssociation/customview/MyCircleImageView.java" />
+    </issue>
+    <issue id="FloatMath">
+        <ignore path="src/com/fourteencells/StudentAssociation/utils/datetime/WheelView.java" />
+    </issue>
+    <issue id="HandlerLeak">
+        <ignore path="src/com/fourteencells/StudentAssociation/utils/datetime/WheelView.java" />
+    </issue>
+    <issue id="InflateParams">
+        <ignore path="src/com/fourteencells/StudentAssociation/fragment/ClubEventFragment.java" />
+        <ignore path="src/com/fourteencells/StudentAssociation/fragment/ClubTitleSynopsisFragment.java" />
+        <ignore path="src/com/fourteencells/StudentAssociation/fragment/EventTitleNameFragment.java" />
+    </issue>
+    <issue id="InlinedApi">
+        <ignore path="src/com/fourteencells/StudentAssociation/view/NewClubActivity.java" />
+    </issue>
+    <issue id="NewApi">
+        <ignore path="src/com/fourteencells/StudentAssociation/view/CreatePopupWindow.java" />
+        <ignore path="src/com/fourteencells/StudentAssociation/view/PersonalInfoActivity.java" />
+        <ignore path="src/com/fourteencells/StudentAssociation/view/RegistSecondActivity.java" />
+    </issue>
+    <issue id="Recycle">
+        <ignore path="src/com/fourteencells/StudentAssociation/customview/SlidingDeleteListView.java" />
+        <ignore path="src/com/fourteencells/StudentAssociation/customview/SwipeDismissListView.java" />
+    </issue>
+    <issue id="ResourceAsColor">
+        <ignore path="src/com/fourteencells/StudentAssociation/view/ClubTabActivity.java" />
+    </issue>
+    <issue id="SdCardPath">
+        <ignore path="src/com/fourteencells/StudentAssociation/no/EditPhotoActivity.java" />
+        <ignore path="src/com/fourteencells/StudentAssociation/view/PhotoGraphActivity.java" />
+    </issue>
+    <issue id="SimpleDateFormat">
+        <ignore path="src/com/fourteencells/StudentAssociation/adpter/ChooseEventAdapter.java" />
+        <ignore path="src/com/fourteencells/StudentAssociation/adpter/ClubEventAdapter.java" />
+        <ignore path="src/com/fourteencells/StudentAssociation/adpter/EventAdapter.java" />
+        <ignore path="src/com/fourteencells/StudentAssociation/adpter/MineEvensAdapter.java" />
+        <ignore path="src/com/fourteencells/StudentAssociation/adpter/RegistrationAdapter.java" />
+        <ignore path="src/com/fourteencells/StudentAssociation/fragment/EventDetailsFragment.java" />
+        <ignore path="src/com/fourteencells/StudentAssociation/no/EditPhotoActivity.java" />
+        <ignore path="src/com/fourteencells/StudentAssociation/utils/TimeUtils.java" />
+        <ignore path="src/com/fourteencells/StudentAssociation/utils/Tools.java" />
+        <ignore path="src/com/fourteencells/StudentAssociation/view/CreateEventActivity.java" />
+        <ignore path="src/com/fourteencells/StudentAssociation/view/CreateEventFirstActivity.java" />
+        <ignore path="src/com/fourteencells/StudentAssociation/view/CreateEventFourthActivity.java" />
+        <ignore path="src/com/fourteencells/StudentAssociation/view/EventDetailsFragment.java" />
+        <ignore path="src/com/fourteencells/StudentAssociation/view/EventTabActivity.java" />
+        <ignore path="src/com/fourteencells/StudentAssociation/view/MainActivity.java" />
+        <ignore path="src/com/fourteencells/StudentAssociation/view/PhotoGraphActivity.java" />
+        <ignore path="src/com/fourteencells/StudentAssociation/view/ShareEventActivity.java" />
+    </issue>
+    <issue id="ViewConstructor">
+        <ignore path="src/com/fourteencells/StudentAssociation/customview/Preview.java" />
+        <ignore path="src/com/fourteencells/StudentAssociation/view/CreatePopupWindow.java" />
+    </issue>
+    <issue id="WorldReadableFiles">
+        <ignore path="src/com/fourteencells/StudentAssociation/view/ClubMemberActivity.java" />
+        <ignore path="src/com/fourteencells/StudentAssociation/view/ClubPictureActivity.java" />
+        <ignore path="src/com/fourteencells/StudentAssociation/view/CreateEventNextActivity.java" />
+        <ignore path="src/com/fourteencells/StudentAssociation/view/EventMemberActivity.java" />
+        <ignore path="src/com/fourteencells/StudentAssociation/view/EventPictureActivity.java" />
+        <ignore path="src/com/fourteencells/StudentAssociation/view/PersonalInfoActivity.java" />
+    </issue>
+    <issue id="WorldWriteableFiles">
+        <ignore path="src/com/fourteencells/StudentAssociation/view/MainActivity.java" />
+    </issue>
+</lint>

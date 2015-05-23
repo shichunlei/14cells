@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.fourteencells.StudentAssociation.customview.PullToRefreshView
+        android:id="@+id/main_pull_refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/event_list"
+            style="@style/listview"
+            android:headerDividersEnabled="true"
+            android:listSelector="@android:color/transparent" >
+        </ListView>
+    </com.fourteencells.StudentAssociation.customview.PullToRefreshView>
+
+    <TextView
+        android:id="@+id/tv_no_mine_event"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/no_event"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

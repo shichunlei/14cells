@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <!-- 这里边的layout_width没有用，会在程序执行的时候动态的赋值给最恰当的宽度（适应屏幕变化） -->
+
+    <EditText
+        android:id="@+id/et_keyword_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/search_bg"
+        android:hint="请输入关键字"
+        android:inputType="text"
+        android:paddingLeft="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/dw" />
+
+    <ImageView
+        android:id="@+id/image_search"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/search" />
+
+</RelativeLayout>

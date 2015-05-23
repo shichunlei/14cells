@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fourteencells.StudentAssociation"
+    android:versionCode="3"
+    android:versionName="1.0.3" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+
+    <!-- 访问网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 获取WI-FI状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 写入外部存储 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 使用震动 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- GPS定位权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 拍照权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- 短信发送权限 -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:name="com.fourteencells.StudentAssociation.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- 启动页面 -->
+        <activity
+            android:name="com.fourteencells.StudentAssociation.view.LogoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 登录页面 -->
+        <activity
+            android:name="com.fourteencells.StudentAssociation.view.LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 注册页面1 -->
+        <activity
+            android:name="com.fourteencells.StudentAssociation.view.RegistActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 注册页面2 -->
+        <activity
+            android:name="com.fourteencells.StudentAssociation.view.RegistSecondActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 主页 -->
+        <activity
+            android:name="com.fourteencells.StudentAssociation.view.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 主页 - 发现 -->
+        <activity
+            android:name="com.fourteencells.StudentAssociation.view.LiveActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 活动主页 -->
+        <activity
+            android:name="com.fourteencells.StudentAssociation.view.EventFragmentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 主页 - 我的 -->
+        <activity
+            android:name="com.fourteencells.StudentAssociation.view.MineFragmentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 主页 - 消息 -->
+        <activity
+            android:name="com.fourteencells.StudentAssociation.view.NewsFragmentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 主页 - 社团 -->
+        <activity
+            android:name="com.fourteencells.StudentAssociation.view.ClubListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 社团主页 -->
+        <activity
+            android:name="com.fourteencells.StudentAssociation.view.ClubFragmentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 个人设置 -->
+        <activity
+            android:name="com.fourteencells.StudentAssociation.view.SettingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 修改密码 -->
+        <activity
+            android:name="com.fourteencells.StudentAssociation.view.ChangePasswordActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 个人资料 -->
+        <activity
+            android:name="com.fourteencells.StudentAssociation.view.PersonalInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 修改个人信息 -->
+        <activity
+            android:name="com.fourteencells.StudentAssociation.view.EditorPersonalInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 搜索社团 -->
+        <activity
+            android:name="com.fourteencells.StudentAssociation.view.SearchClubResultActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 图片详情 -->
+        <activity
+            android:name="com.fourteencells.StudentAssociation.view.PictureDetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 图片评价 -->
+        <activity
+            android:name="com.fourteencells.StudentAssociation.view.CommentActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <!-- 创建图片 -->
+        <activity
+            android:name="com.fourteencells.StudentAssociation.view.CreatePictureActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 图片定位 -->
+        <activity
+            android:name="com.fourteencells.StudentAssociation.view.LocationActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 选择活动 -->
+        <activity
+            android:name="com.fourteencells.StudentAssociation.view.ChooseEventActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 发起活动 -->
+        <activity
+            android:name="com.fourteencells.StudentAssociation.view.PostEventActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 创建活动1 -->
+        <activity
+            android:name="com.fourteencells.StudentAssociation.view.CreateEventFirstActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 创建活动2 -->
+        <activity
+            android:name="com.fourteencells.StudentAssociation.view.CreateEventSecondActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 创建活动3 -->
+        <activity
+            android:name="com.fourteencells.StudentAssociation.view.CreateEventThirdActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 分享活动 -->
+        <activity
+            android:name="com.fourteencells.StudentAssociation.view.ShareEventActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 创建设团1 -->
+        <activity
+            android:name="com.fourteencells.StudentAssociation.view.CreateClubActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 创建设团2 -->
+        <activity
+            android:name="com.fourteencells.StudentAssociation.view.CreateClubNextActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 签到 -->
+        <activity
+            android:name="com.fourteencells.StudentAssociation.view.RegistrationActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 审核成员 -->
+        <activity
+            android:name="com.fourteencells.StudentAssociation.view.CheckMemberActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 签到统计 -->
+        <activity
+            android:name="com.fourteencells.StudentAssociation.view.StatisticsActivity"
+            android:screenOrientation="portrait" />
+        <!-- 生成二维码 -->
+        <activity
+            android:name="com.fourteencells.StudentAssociation.view.GenerateQRCodeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 扫码 -->
+        <activity
+            android:name="com.fourteencells.StudentAssociation.view.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- ShareSDK -->
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <!-- 微信用到的Activity -->
+        <activity
+            android:name="com.fourteencells.StudentAssociation.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 拍照 -->
+        <activity
+            android:name="com.fourteencells.StudentAssociation.view.PhotoGraphActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.CHOOSER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main editor -->
+        <activity
+            android:name="com.aviary.android.feather.FeatherActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:hardwareAccelerated="true"
+            android:process=":standalone"
+            android:screenOrientation="unspecified"
+            android:theme="@style/AviaryTheme"
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <!-- Alert -->
+        <activity
+            android:name="com.aviary.android.feather.AlertActivity"
+            android:launchMode="standard"
+            android:noHistory="true"
+            android:theme="@style/AviaryTheme.Dialog" >
+            <intent-filter>
+                <action android:name="aviary.intent.action.ALERT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--
+        	Required for the hi-res image processing
+        	The "android:authorities" attribute must be unique, so please use your app's package path in this way:
+        	android:authorities="{your.package.name}.HiResProvider"
+        -->
+        <provider
+            android:name="com.aviary.android.feather.library.providers.FeatherContentProvider"
+            android:authorities="com.fourteencells.StudentAssociation.HiResProvider"
+            android:exported="false"
+            android:process=":standalone" >
+        </provider>
+
+        <!-- CDS Content Service -->
+        <service
+            android:name="com.aviary.android.feather.cds.AviaryCdsService"
+            android:exported="false"
+            android:process=":aviarycds" >
+            <intent-filter>
+                <action android:name="aviary.intent.action.CDS_DOWNLOAD_START" />
+                <action android:name="aviary.intent.action.CDS_RESTORE_USER_ITEMS" />
+            </intent-filter>
+        </service>
+
+        <!--
+			Cds Content Provider, 
+			NOTE that the "authorities" value MUST be formatted in this way:
+			android:authorities="{your.packagename}.AviaryCdsProvider"
+        -->
+        <provider
+            android:name="com.aviary.android.feather.cds.AviaryCdsProvider"
+            android:authorities="com.fourteencells.StudentAssociation.AviaryCdsProvider"
+            android:exported="false"
+            android:process=":aviarycds"
+            android:syncable="true" />
+
+        <!-- CDS Download Receiver -->
+        <receiver
+            android:name="com.aviary.android.feather.cds.AviaryCdsReceiver"
+            android:process=":aviarycds" >
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+
+        <!--
+        	get your Aviary API Key for free at http://aviary.com/android
+        	and uncomment the following section, replacing "your_api_key_here" with your api key
+        -->
+        <meta-data
+            android:name="com.aviary.android.feather.v1.API_KEY"
+            android:value="27c6ca75a12c6af2" />
+        <!-- END AVIARY ENTRIES -->
+    </application>
+
+</manifest>
